@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "Si usa este código o estos datos, cite el artículo y este repositorio."
+title: "ozono-lima-pronostico: pipeline reproducible para el pronóstico horario de ozono en Lima Metropolitana"
+version: 1.2.1
+date-released: 2026-10-11
+license: MIT
+repository-code: "https://github.com/etocto/ozono-lima-pronostico"
+authors:
+  - family-names: "Tarrillo"
+    given-names: "Jorge"
+    affiliation: "Universidad Peruana Unión"
+  - family-names: "Casas"
+    given-names: "Cesar"
+    affiliation: "Universidad Peruana Unión"
+  - family-names: "Pacheco"
+    given-names: "Daniel"
+    affiliation: "Universidad Peruana Unión"
+  - family-names: "López-Gonzales"
+    given-names: "Javier Linkolk"
+    affiliation: "Universidad Peruana Unión"
+keywords:
+  - tropospheric ozone
+  - air quality forecasting
+  - Lima
+  - extreme learning machine
+  - time series

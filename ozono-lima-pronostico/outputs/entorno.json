@@ -1,0 +1,17 @@
+{
+  "nota": "Entorno de la corrida completa (entrenamiento y predicciones). Las tablas y figuras se regeneraron con la v1.2.1 mediante 'python run_all.py --report-only' a partir de las mismas predicciones; las cifras no cambian.",
+  "python": "3.13.7",
+  "platform": "macOS-15.6.1-arm64-arm-64bit-Mach-O",
+  "pipeline_entrenamiento": "1.2.0",
+  "pipeline_tablas_figuras": "1.2.1",
+  "fast": false,
+  "runtime_total_s": 738.3,
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "statsmodels": "0.15.0",
+  "matplotlib": "3.11.2",
+  "torch": "2.14.1",
+  "boosting_backend": "sklearn HistGradientBoostingRegressor (HGB)"
+}

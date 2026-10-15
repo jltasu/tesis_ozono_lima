@@ -1,0 +1,10 @@
+Variable,Unidad,Fuente,Media (rango entre estaciones),Faltantes,Uso
+Ozono troposférico (O$_3$),$\mu$g/m$^3$,SENAMHI (4 estaciones),21.0 (10.6--28.4),0 \%,Variable respuesta
+Temperatura del aire,°C,SENAMHI (4 estaciones),15.8 (15.5--16.3),0 \%,Covariable (variante +met)
+Humedad relativa,\%,SENAMHI (4 estaciones),89.2 (86.8--91.0),0 \%,Covariable (variante +met)
+Velocidad del viento,m/s,SENAMHI (4 estaciones),1.5 (1.0--2.1),0 \%,Covariable (variante +met)
+Dirección del viento,° (seno/coseno),SENAMHI (4 estaciones),216.8 (196.7--243.6),0 \%,Covariable (variante +met)
+Radiación solar,---,No disponible,---,100 \%,No incluida (limitación declarada)
+NO$_x$ y NO,---,No disponible,---,100 \%,No incluida (limitación declarada)
+Compuestos orgánicos volátiles (COV),---,No disponible,---,100 \%,No incluida (limitación declarada)
+Flujo vehicular,---,No disponible,---,100 \%,No incluida (limitación declarada)

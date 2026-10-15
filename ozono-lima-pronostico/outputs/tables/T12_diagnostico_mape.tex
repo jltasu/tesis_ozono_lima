@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering
+\caption{Diagnóstico de la inestabilidad del MAPE: proporción de horas de prueba con concentración < 2 $\mu$g/m$^3$.}
+\label{tab_mape}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccc}
+\toprule
+\textbf{Estación} & \textbf{\% horas de prueba < 2} & \textbf{MAPE Naive (\%)} & \textbf{SMAPE Naive (\%)} & \textbf{Mejor modelo} & \textbf{MAPE mejor (\%)} & \textbf{SMAPE mejor (\%)} \\
+\midrule
+ATE & 1.2 & 38.6 & 21.60 & HGB & 21.2 & 17.41 \\
+\midrule
+CDM & 2.9 & 38.5 & 18.51 & RF & 56.2 & 20.76 \\
+\midrule
+SB & 0.1 & 23.0 & 21.11 & MLP & 19.9 & 19.35 \\
+\midrule
+STA & 31.9 & 83.6 & 53.10 & MLP & 71.8 & 47.19 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,32 @@
+\begin{table}[H]
+\centering
+\caption{Generalización temporal: entrenamiento con los inviernos previos y pronóstico de un invierno completo no visto (~2219 h por invierno). Se muestra el MAE ($\mu$g/m$^3$) del Naive y el MAE de cada modelo relativo al Naive (< 1: mejor que el Naive). Componente determinística sin tendencia ni dummies de año.}
+\label{tab_crosswinter}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Estación} & \textbf{Invierno de prueba (entren.)} & \textbf{h} & \textbf{MAE Naive} & \textbf{ELM} & \textbf{MLP} & \textbf{NPAR} & \textbf{ARIMA} & \textbf{Determ} & \textbf{SNaive24} \\
+\midrule
+ATE & 2018 (2017) & 1 & 3.649 & 1.20*** & \textbf{1.09} & 1.22* & 1.21** & 5.60*** & 2.05** \\
+ & 2018 (2017) & 24 & 7.477 & 1.73*** & \textbf{1.68***} & 1.94*** & 2.18*** & 2.75*** & 1.00 \\
+ & 2019 (2017-2018) & 1 & 3.802 & 0.85*** & \textbf{0.81***} & 0.83*** & 0.88*** & 2.41*** & 1.30*** \\
+ & 2019 (2017-2018) & 24 & 4.946 & 1.09 & \textbf{1.01} & 1.01 & 1.16** & 1.86*** & 1.00 \\
+\midrule
+CDM & 2018 (2017) & 1 & 5.547 & 1.17*** & 1.05 & 1.03 & \textbf{0.95*} & 2.40*** & 1.29*** \\
+ & 2018 (2017) & 24 & 7.173 & 1.23*** & \textbf{1.14**} & 1.21*** & 1.16** & 1.86*** & 1.00 \\
+ & 2019 (2017-2018) & 1 & 5.670 & 2.65*** & \textbf{1.07*} & 2.53*** & 2.15*** & 6.56*** & 1.68*** \\
+ & 2019 (2017-2018) & 24 & 9.547 & 2.36*** & \textbf{2.12***} & 2.41*** & 3.87*** & 3.89*** & 1.00 \\
+\midrule
+SB & 2018 (2017) & 1 & 3.797 & 0.93** & \textbf{0.90***} & 0.98 & 0.93*** & 1.75*** & 1.67*** \\
+ & 2018 (2017) & 24 & 6.319 & 0.97 & 0.97 & 1.07 & \textbf{0.96} & 1.05 & 1.00 \\
+ & 2019 (2017-2018) & 1 & 3.508 & 1.07 & \textbf{0.92***} & 1.08** & 0.96* & 2.37*** & 1.70*** \\
+ & 2019 (2017-2018) & 24 & 5.951 & 1.13** & \textbf{1.11*} & 1.39*** & 1.20*** & 1.40*** & 1.00 \\
+\midrule
+STA & 2018 (2017) & 1 & 3.321 & \textbf{0.87***} & 0.92** & 0.92*** & 0.99 & 1.84*** & 1.40*** \\
+ & 2018 (2017) & 24 & 4.684 & \textbf{1.16**} & 1.22*** & 1.23*** & 1.30*** & 1.30*** & 1.00 \\
+ & 2019 (2017-2018) & 1 & 4.064 & 1.21*** & \textbf{0.93*} & 1.13** & 1.15*** & 2.18*** & 1.59*** \\
+ & 2019 (2017-2018) & 24 & 6.468 & \textbf{1.14**} & 1.21*** & 1.22*** & 1.32*** & 1.37*** & 1.00 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Negrita: mejor modelo del componente estocástico. Prueba DM frente al Naive con varianza HAC: $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$ (el signo se lee en la razón: < 1 mejora, > 1 empeora). MAE, SMAPE y estadísticos DM completos en T13\_generalizacion\_entre\_inviernos\_largo.csv.}
+\end{table}

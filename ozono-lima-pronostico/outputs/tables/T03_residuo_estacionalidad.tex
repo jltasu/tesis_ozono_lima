@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Estacionalidad remanente y estacionariedad del residuo estocástico $e_h$ (primer conjunto de entrenamiento).}
+\label{tab_resid}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Estación} & \textbf{ACF(24)} & \textbf{PACF(24)} & \textbf{ACF(168)} & \textbf{PACF(168)} & \textbf{Banda 95\%} & \textbf{ADF residuo} & \textbf{ADF p} & \textbf{KPSS p} & \textbf{R2 determ.} \\
+\midrule
+ATE & 0.446 & -0.077 & 0.054 & 0.007 & 0.027 & -9.17 & <0.0001 & 0.1000 & 0.162 \\
+\midrule
+CDM & 0.504 & 0.048 & 0.159 & -0.008 & 0.027 & -7.91 & <0.0001 & 0.1000 & 0.515 \\
+\midrule
+SB & 0.359 & 0.054 & 0.019 & 0.017 & 0.027 & -7.75 & <0.0001 & 0.1000 & 0.393 \\
+\midrule
+STA & 0.364 & -0.001 & 0.082 & -0.003 & 0.027 & -8.03 & <0.0001 & 0.0304 & 0.476 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize La ACF en los rezagos 24 y 168 también refleja la persistencia autorregresiva; la PACF aísla la dependencia estacional directa. Si la PACF(24) queda dentro de la banda, un término estacional adicional (SARIMA) sería redundante; si queda fuera, se justifica el SARIMA de contraste (Tabla~\ref{tab_sarima}).}
+\end{table}

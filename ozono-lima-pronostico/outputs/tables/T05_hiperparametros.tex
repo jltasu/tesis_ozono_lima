@@ -1,0 +1,35 @@
+\begin{table}[H]
+\centering
+\caption{Hiperparámetros seleccionados por estación y horizonte: $p$ por BIC; el resto, por mínimo SMAPE en un hold-out temporal de 540 h al final del primer conjunto de entrenamiento. ELM: activación sigmoide, pesos $\mathcal{U}(-1,1)$, $L$ neuronas y regularización $\lambda$; MLP: activación logística, L-BFGS, L2 $=10^{-4}$; RF: 300 árboles (profundidad máxima / mínimo por hoja); HGB: 400 iteraciones de boosting (profundidad / tasa de aprendizaje); GRU y LSTM: una capa recurrente, Adam, parada temprana.}
+\label{tab_hp}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccccccccccc}
+\toprule
+\textbf{Estación} & \textbf{h} & \textbf{p} & \textbf{ARIMA} & \textbf{ELM L / $\lambda$} & \textbf{MLP nodos} & \textbf{NPAR $\alpha$} & \textbf{RF prof. / hoja} & \textbf{HGB prof. / tasa} & \textbf{GRU unid.} & \textbf{LSTM unid.} & \textbf{ELM+met L / $\lambda$} & \textbf{MLP+met nodos} \\
+\midrule
+ATE & 1 & 26 & (4,0,4) & 200 / 0.0 & 3 & 10.0 & $\infty$ / 20 & 6 / 0.03 & 16 & 16 & 200 / 1.0 & 3 \\
+ & 6 & 26 & (4,0,4) & 200 / 0.0 & 5 & 10.0 & 10 / 5 & 3 / 0.03 & 32 & 16 & 10 / 1.0 & 3 \\
+ & 12 & 26 & (4,0,4) & 10 / 1.0 & 3 & 10.0 & 10 / 5 & 3 / 0.03 & 32 & 16 & 10 / 0.0 & 3 \\
+ & 24 & 26 & (4,0,4) & 10 / 1.0 & 1 & 10.0 & 10 / 5 & 3 / 0.03 & 16 & 32 & 50 / 1.0 & 1 \\
+ & 48 & 26 & (4,0,4) & 10 / 1.0 & 5 & 10.0 & 10 / 5 & 6 / 0.03 & 16 & 32 & 10 / 1.0 & 3 \\
+\midrule
+CDM & 1 & 27 & (4,0,4) & 200 / 0.0 & 3 & 10.0 & $\infty$ / 5 & 6 / 0.03 & 16 & 16 & 200 / 0.0 & 7 \\
+ & 6 & 27 & (4,0,4) & 50 / 1.0 & 3 & 10.0 & $\infty$ / 5 & 3 / 0.03 & 32 & 32 & 50 / 0.0 & 3 \\
+ & 12 & 27 & (4,0,4) & 50 / 1.0 & 3 & 10.0 & $\infty$ / 5 & 3 / 0.03 & 32 & 32 & 50 / 1.0 & 3 \\
+ & 24 & 27 & (4,0,4) & 50 / 1.0 & 5 & 10.0 & 10 / 5 & 3 / 0.03 & 32 & 16 & 50 / 1.0 & 1 \\
+ & 48 & 27 & (4,0,4) & 20 / 0.0 & 1 & 10.0 & 10 / 5 & 3 / 0.03 & 16 & 32 & 50 / 1.0 & 1 \\
+\midrule
+SB & 1 & 24 & (3,0,4) & 200 / 0.0 & 3 & 1.0 & 10 / 20 & 3 / 0.03 & 16 & 32 & 200 / 0.0 & 3 \\
+ & 6 & 24 & (3,0,4) & 100 / 0.0 & 1 & 10.0 & 10 / 20 & 3 / 0.03 & 32 & 32 & 200 / 0.0 & 1 \\
+ & 12 & 24 & (3,0,4) & 100 / 0.0 & 1 & 10.0 & 10 / 20 & 3 / 0.03 & 16 & 32 & 200 / 0.0 & 1 \\
+ & 24 & 24 & (3,0,4) & 100 / 0.0 & 1 & 1.0 & $\infty$ / 20 & 3 / 0.03 & 16 & 32 & 200 / 1.0 & 1 \\
+ & 48 & 24 & (3,0,4) & 100 / 0.0 & 1 & 1.0 & $\infty$ / 5 & 6 / 0.03 & 32 & 32 & 200 / 0.0 & 1 \\
+\midrule
+STA & 1 & 23 & (4,0,3) & 200 / 0.0 & 7 & 1.0 & $\infty$ / 5 & 3 / 0.03 & 32 & 32 & 200 / 0.0 & 3 \\
+ & 6 & 23 & (4,0,3) & 200 / 0.0 & 1 & 10.0 & $\infty$ / 20 & 3 / 0.1 & 16 & 32 & 200 / 1.0 & 1 \\
+ & 12 & 23 & (4,0,3) & 200 / 0.0 & 1 & 10.0 & $\infty$ / 20 & 3 / 0.03 & 32 & 32 & 200 / 1.0 & 1 \\
+ & 24 & 23 & (4,0,3) & 200 / 0.0 & 7 & 0.01 & 10 / 20 & 6 / 0.03 & 16 & 16 & 200 / 1.0 & 5 \\
+ & 48 & 23 & (4,0,3) & 200 / 0.0 & 3 & 10.0 & $\infty$ / 5 & 6 / 0.1 & 16 & 32 & 200 / 0.0 & 1 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,68 @@
+{
+  "stations": {
+    "ATE": {
+      "best_univariate_h1": "HGB",
+      "best_any_h1": "HGB",
+      "MAE_best": 3.1234978123948194,
+      "MAE_naive": 4.472076023391813,
+      "SMAPE_best": 17.413183297821515,
+      "SMAPE_naive": 21.595480068003113,
+      "MASE_best": 0.654052579716471,
+      "RelMAE_best": 0.6984447035463913,
+      "p": 26,
+      "arima_order": [
+        4,
+        4
+      ],
+      "runtime_s": 533.771271944046
+    },
+    "CDM": {
+      "best_univariate_h1": "RF",
+      "best_any_h1": "RF",
+      "MAE_best": 6.098736990724506,
+      "MAE_naive": 6.1173245614035086,
+      "SMAPE_best": 20.756947320359192,
+      "SMAPE_naive": 18.505271087171497,
+      "MASE_best": 1.1320477686375237,
+      "RelMAE_best": 0.9969614869225218,
+      "p": 27,
+      "arima_order": [
+        4,
+        4
+      ],
+      "runtime_s": 576.4287579059601
+    },
+    "SB": {
+      "best_univariate_h1": "MLP",
+      "best_any_h1": "MLP",
+      "MAE_best": 3.224033138375489,
+      "MAE_naive": 3.59437134502924,
+      "SMAPE_best": 19.352890652343998,
+      "SMAPE_naive": 21.113840224187395,
+      "MASE_best": 0.7582242851456752,
+      "RelMAE_best": 0.8969671825461489,
+      "p": 24,
+      "arima_order": [
+        3,
+        4
+      ],
+      "runtime_s": 581.4728331565857
+    },
+    "STA": {
+      "best_univariate_h1": "MLP",
+      "best_any_h1": "MLP+met",
+      "MAE_best": 3.3742448220337002,
+      "MAE_naive": 4.056725146198831,
+      "SMAPE_best": 47.185710594034965,
+      "SMAPE_naive": 53.104837966958385,
+      "MASE_best": 0.9052602498576309,
+      "RelMAE_best": 0.8317656978056258,
+      "p": 23,
+      "arima_order": [
+        4,
+        3
+      ],
+      "runtime_s": 618.3901000022888
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Estación,% horas de prueba < 2,MAPE Naive (%),SMAPE Naive (%),Mejor modelo,MAPE mejor (%),SMAPE mejor (%)
+ATE,1.2,38.6,21.60,HGB,21.2,17.41
+CDM,2.9,38.5,18.51,RF,56.2,20.76
+SB,0.1,23.0,21.11,MLP,19.9,19.35
+STA,31.9,83.6,53.10,MLP,71.8,47.19

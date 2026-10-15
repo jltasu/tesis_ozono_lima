@@ -1,0 +1,20 @@
+\begin{table}[H]
+\centering
+\caption{Modelo SARIMA del residuo estocástico (contraste estacional con periodo de 24 h): coeficientes, criterios de información y diagnóstico de residuos.}
+\label{tab_sarima}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llcccccccc}
+\toprule
+\textbf{Estación} & \textbf{Modelo} & \textbf{AR1} & \textbf{MA1} & \textbf{AR estacional (24)} & \textbf{MA estacional (24)} & \textbf{AIC} & \textbf{BIC} & \textbf{LB p (24)} & \textbf{LB p (168)} \\
+\midrule
+ATE & SARIMA(1,0,1)(1,0,1)$_{24}$ & +0.920*** & -0.037*** & +0.873*** & -0.781*** & 7061.5 & 7094.5 & <0.0001 & <0.0001 \\
+\midrule
+CDM & SARIMA(1,0,1)(1,0,1)$_{24}$ & +0.778*** & -0.123*** & +0.863*** & -0.694*** & 7726.9 & 7759.8 & <0.0001 & <0.0001 \\
+\midrule
+SB & SARIMA(1,0,1)(1,0,1)$_{24}$ & +0.788*** & +0.059*** & +0.921*** & -0.859*** & 5826.7 & 5859.7 & <0.0001 & <0.0001 \\
+\midrule
+STA & SARIMA(1,0,1)(1,0,1)$_{24}$ & +0.761*** & -0.020 & +0.954*** & -0.894*** & 10278.9 & 10311.9 & <0.0001 & <0.0001 \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$.}
+\end{table}

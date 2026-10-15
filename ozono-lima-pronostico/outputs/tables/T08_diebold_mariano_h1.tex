@@ -1,0 +1,40 @@
+\begin{table}[H]
+\centering
+\caption{Prueba de Diebold--Mariano ($h=1$, pérdida absoluta): estadístico del mejor modelo de cada estación (entre paréntesis) frente a cada rival. Negativo: el mejor modelo es más preciso.}
+\label{tab_dm}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llccc}
+\toprule
+\textbf{Modelo rival} & \textbf{ATE (vs. HGB)} & \textbf{CDM (vs. RF)} & \textbf{SB (vs. MLP)} & \textbf{STA (vs. MLP)} \\
+\midrule
+ELM & -1.37 & -7.23*** & -3.74*** & -6.48*** \\
+\midrule
+MLP & -1.06 & -1.19 & --- & --- \\
+\midrule
+NPAR & -5.52*** & -3.35** & -4.42*** & -3.52** \\
+\midrule
+RF & -1.09 & --- & -3.12** & -3.18** \\
+\midrule
+HGB & --- & -5.31*** & -3.37** & -3.69** \\
+\midrule
+GRU & -10.86*** & -9.68*** & -6.46*** & -3.57** \\
+\midrule
+LSTM & -10.85*** & -8.39*** & -6.05*** & -4.67*** \\
+\midrule
+ARIMA & -5.68*** & -13.48*** & -5.53*** & -8.53*** \\
+\midrule
+SARIMA & -3.62** & -2.68* & -1.79 & -2.30* \\
+\midrule
+ELM+met & -5.03*** & -6.37*** & -6.61*** & -6.66*** \\
+\midrule
+MLP+met & -1.99 & -1.92 & -0.16 & +0.15 \\
+\midrule
+Naive & -5.28*** & -0.10 & -4.17*** & -4.85*** \\
+\midrule
+SNaive24 & -6.08*** & -9.37*** & -9.37*** & -9.84*** \\
+\midrule
+SNaive168 & -6.73*** & -7.79*** & -11.02*** & -10.29*** \\
+\bottomrule
+\end{tabular}}
+\par\smallskip{\footnotesize Varianza Newey--West con 24 rezagos (HAC), robusta a la autocorrelación horaria; significancia con valores $p$ ajustados por Holm: $^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$. Versión HLN y valores $p$ completos en T08\_diebold\_mariano\_h1\_largo.csv.}
+\end{table}
